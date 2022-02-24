@@ -11,4 +11,11 @@ export class AppController {
       message: 'Hello NestJS'
     }
   }
+
+  @Get('otro')
+  second(): any {
+    return {
+      message: 'other endpoint'
+    }
+  }
 }
